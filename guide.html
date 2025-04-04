@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FTC Programming Guide</title>
+  <link rel="icon" href="logo.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #101010;
+      color: white;
+    }
+
+    header {
+      background: #000;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo-title {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .logo-title img {
+      width: 40px;
+      height: 40px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 500;
+      position: relative;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background: white;
+      bottom: -4px;
+      left: 0;
+      transition: width 0.3s ease;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    .container {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.75rem;
+      margin-bottom: 2rem;
+    }
+
+    .section {
+      margin-bottom: 3rem;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #f2f2f2;
+      border-bottom: 2px solid #444;
+      padding-bottom: 0.5rem;
+    }
+
+    .section ul {
+      list-style: none;
+      padding-left: 1rem;
+    }
+
+    .section ul li {
+      margin-bottom: 0.75rem;
+    }
+
+    .section ul li a {
+      color: #62aaff;
+      text-decoration: none;
+    }
+
+    .section ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .highlight {
+      background-color: #1f1f1f;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+    }
+
+    .highlight code {
+      color: #90ee90;
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-title">
+      <a href="index.html" style="display: flex; align-items: center; text-decoration: none; color: white;">
+        <img src="logo.png" alt="FTC Logo">
+        <h2>Centennial High School FTC Robotics Club</h2>
+      </a>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="team.html">Our Team</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="guide.html">Guide</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>FTC Java Programming Guide</h1>
+
+    <div class="section">
+      <h2>Getting Started</h2>
+      <ul>
+        <li><a href="https://developer.android.com/studio/install">Installing Android Studio</a></li>
+        <li><a href="https://ftc-docs.firstinspires.org/en/latest/ftc_sdk/overview/index.html">Setting Up the FTC SDK</a></li>
+        <li><a href="https://ftc-docs.firstinspires.org/en/latest/programming_resources/tutorial_specific/android_studio/creating_op_modes/Creating-and-Running-an-Op-Mode-(Android-Studio).html">Your First OpMode</a></li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Java Basics</h2>
+      <ul>
+        <li><a href="https://www.w3schools.com/java/java_data_types.asp">Variables & Data Types</a></li>
+        <li><a href="https://www.w3schools.com/java/java_methods.asp">Methods</a></li>
+        <li><a href="https://www.codecademy.com/resources/docs/java/conditionals">Conditionals</a></li>
+        <li><a href="https://www.w3schools.com/java/java_for_loop.asp">Loops (for, while)</a></li>
+        <li><a href="https://www.codecademy.com/learn/apcs-object-oriented-programming/modules/apcs-what-are-classes-objects-and-methods/cheatsheet">Classes & Objects</a></li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Object-Oriented Concepts</h2>
+      <ul>
+        <li><a href="https://www.tutorialspoint.com/java/java_encapsulation.htm">Encapsulation</a></li>
+        <li><a href="https://www.w3schools.com/java/java_inheritance.asp">Inheritance</a></li>
+        <li><a href="https://www.tutorialspoint.com/java/java_polymorphism.htm">Polymorphism</a></li>
+        <li><a href="https://www.geeksforgeeks.org/abstraction-in-java-2/">Abstraction</a></li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>FTC SDK</h2>
+      <ul>
+        <li><a href="#">DcMotor & Servo</a></li>
+        <li><a href="#">Gamepad Input</a></li>
+        <li><a href="#">Telemetry</a></li>
+        <li><a href="#">Autonomous vs TeleOp</a></li>
+        <li><a href="#">HardwareMap</a></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

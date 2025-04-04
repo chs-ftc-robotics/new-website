@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Centennial FTC Robotics</title>
+  <link rel="icon" href="logo.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #101010;
+      color: #ffffff;
+    }
+
+    header {
+      background: #000;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo-title {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .logo-title img {
+      width: 40px;
+      height: 40px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 500;
+      position: relative;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background: white;
+      bottom: -4px;
+      left: 0;
+      transition: width 0.3s ease;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .section {
+      margin-bottom: 3rem;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #333;
+      padding-bottom: 0.5rem;
+    }
+
+    .section p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #ccc;
+    }
+
+    .highlight {
+      background: #1a1a1a;
+      padding: 1.5rem;
+      border-left: 5px solid #5c6ac4;
+      border-radius: 8px;
+      font-style: italic;
+      margin-top: 2rem;
+      color: #eee;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .grid-item {
+      background: #1c1c1c;
+      padding: 1.5rem;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .grid-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .grid-item h3 {
+      margin-bottom: 0.75rem;
+      color: #ffffff;
+    }
+
+    .grid-item p {
+      font-size: 0.95rem;
+      color: #bbbbbb;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-title">
+      <a href="index.html" style="display: flex; align-items: center; text-decoration: none; color: white;">
+        <img src="logo.png" alt="FTC Logo">
+        <h2>Centennial High School FTC Robotics Club</h2>
+      </a>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="team.html">Our Team</a>
+      <a href="ftc.html">FTC</a>
+      <a href="guide.html">Guide</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>About Us</h1>
+
+    <div class="section">
+      <h2>Who Are We?</h2>
+      <p>
+        We are Centennial High School’s FTC Robotics Team, <strong>Robot In Pieces</strong> (Team 20343), dedicated to cultivating student interest in STEM. Our mission is to prepare members for real-world experiences in robotics, programming, engineering, and marketing — all while fostering creativity and teamwork.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>What Do We Do?</h2>
+      <p>
+        Our team builds competitive robots for the FIRST Tech Challenge and participates in regional tournaments. Members gain hands-on experience in hardware design, software development, and strategic thinking. We also manage outreach initiatives, build professional connections, and document our engineering process.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Why FTC?</h2>
+      <p>
+        FTC teaches more than just robotics. It instills leadership, collaboration, and technical fluency in students of all skill levels. Our team values Gracious Professionalism™, perseverance through failure, and growth through mentorship. FTC offers every student a pathway into STEM and builds confidence through exploration.
+      </p>
+    </div>
+
+    <div class="highlight">
+      "Everyone starts somewhere — no one learns everything all at once. Through challenges, failures, and teamwork, we've grown stronger, more skilled, and more united."
+    </div>
+
+    <div class="grid">
+      <div class="grid-item">
+        <h3>STEM Education</h3>
+        <p>We promote STEM to our local community through workshops, camps, and mentoring opportunities.</p>
+      </div>
+      <div class="grid-item">
+        <h3>Leadership & Growth</h3>
+        <p>Every member is given chances to lead initiatives and contribute their strengths to the team.</p>
+      </div>
+      <div class="grid-item">
+        <h3>Outreach & Impact</h3>
+        <p>Our outreach team collaborates with local businesses and schools to expand access to robotics education.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
